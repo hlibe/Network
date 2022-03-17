@@ -1,0 +1,39 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000000010bf31742, pid=1411, tid=259
+#
+# JRE version: OpenJDK Runtime Environment Zulu11.48+21-CA (11.0.11+9) (build 11.0.11+9-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Zulu11.48+21-CA (11.0.11+9-LTS, mixed mode, tiered, compressed oops, g1 gc, bsd-amd64)
+# Problematic frame:
+# C  [StataMP+0xf81742]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://www.azulsystems.com/support/
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xmx2048M -Xss2M -XX:ErrorFile=/dev/null 
+
+Host: MacBookPro16,2 x86_64 2300 MHz, 8 cores, 32G, Darwin 21.2.0
+Time: Sun Jan 16 12:49:30 2022 HKT elapsed time: 1213362.512116 seconds (14d 1h 2m 42s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f8857585000):  JavaThread "Thread-1" [_thread_in_native, id=259, stack(0x00007ff7b4750000,0x00007ff7b4f50000)]
+
+Stack: [0x00007ff7b4750000,0x00007ff7b4f50000],  sp=0x00007ff7b4f48040,  free space=8160k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [StataMP+0xf81742]
+C  [StataMP+0xf818ab]
+C  [StataMP+0xf80657]
+C  [StataMP+0xae394b]
+C  [StataMP+0x32bda6]
+C  [StataMP+0x5ac28]
+C  [StataMP+0x7905f]
+C  [StataMP+0x790fe]
